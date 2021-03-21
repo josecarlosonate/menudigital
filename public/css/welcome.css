@@ -1,0 +1,240 @@
+:root{
+    --primario: #17A2B8;
+}
+body{
+    background-color: #F7F6F4;
+}
+.text-rosado{
+    color: #FE9687;
+}
+/* barra de la cabezera  */
+.barra{
+    background-color: var(--primario);
+    box-shadow: 18px 2px 14px #9a9898;
+}
+.barra a{
+    color: #fff;
+}
+@media (min-width: 576px) {
+    .navbar-expand-md .navbar-collapse {
+        justify-content: flex-end;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        transition: all .3s ease;
+        padding: 2px 25px;
+        background-color: #fff;
+        color: var(--primario);
+        border-radius: 10px;
+        font-size: 17px;
+    }
+    .navbar-expand-md .navbar-nav .nav-link:hover {
+        padding: 3px 28px;
+    }
+    .barra a.logo{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+    }
+}
+.barra button.navbar-toggler{
+    border-color: #fff;
+    border-style: solid;
+    color: #fff;
+}
+
+/* ****************************************************  */
+/* seccion de pasos  */
+@media screen and (min-width: 768px) {
+    section.fifth-home-section {
+        padding: 0 7vw;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+.slick-track .step img{
+    width: 80px;
+}
+@media screen and (min-width: 580px) {
+    section.fifth-home-section {
+        height: 410px;
+        padding: 0 7vw;
+        margin-top: 7rem;
+    }
+    .slick-track .step img{
+        width: 100px;
+    }
+}
+section.fifth-home-section {
+    background: url(../img/fondopasos.png) no-repeat center top;
+    background-size: cover;
+    text-align: center;
+}
+.fifth-home-section h1{
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.slick-track{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.cta a{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background: #FE9687;
+    border: none;
+    border-radius: 81px;
+    padding: .61rem 2.1rem!important;
+    transition: .4s all ease;
+    text-decoration: none;
+}
+.cta a:hover{
+    box-shadow: 0 2px 16px #FE9687;
+}
+/* *************************************  */
+
+/* caja de pasos  */
+.cajaPasos{
+    
+    width:98%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.step-counter {
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    width: 90%;
+}
+.step-counter h1 {
+    text-align: center;
+    margin-bottom: 1.8rem;
+    font-weight: 700;
+    font-family: Montserrat,sans-serif;
+    line-height: 1.2;
+}
+.step-counter h1 span {
+    color: #FE9687;
+}
+.step-counter ul li.active p {
+    color:  var(--primario);
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    margin: .5rem auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .step-counter ul {
+        width: 620px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .step-counter ul {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 580px) {
+    .step-counter ul {
+        width: 90%;
+    }
+}
+.step-counter ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin-bottom: 1.8rem;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.tw-mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.step-counter ul li {
+    position: relative;
+    padding: 0 5%;
+    width: 33%;
+    display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+    .step-counter ul.tw-mx-auto li img {
+        width: 95px;
+    }
+}
+.step-counter ul.tw-mx-auto li img {
+    width: 90px;
+}
+.step-counter ul li:after {
+    content: "";
+    background: url(../img/lazo.png) no-repeat 50% 50%;
+    background-size: 40px;
+    position: absolute;
+    right: -30px;
+    top: 22%;
+    height: 20px;
+    width: 60px;
+    z-index: -1;
+}
+@media screen and (min-width: 375px) {
+    .step-counter ul li:after {
+        background-size: 70px;
+        background-repeat: repeat-x;
+        right: -30px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .step-counter ul li:after {
+        background-repeat: repeat-x;
+        right: -120px;
+        width: 280px;
+    }
+}
+.step-counter ul li:last-child::after{
+    background: none;
+}
+/* ****************************************  */
+/* caja panel  */
+.panel-container-bg {
+    background-color: #fff;
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 9px 30px #afacac;
+    box-shadow: 3px 9px 30px #afacac;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    height: auto;
+    margin: 0 auto 2.7rem auto;
+    padding: 2.8rem 1.4rem;
+    text-align: center;
+    width: 85%;
+}
+.panel-container-bg h2 {
+    margin-bottom: 1.2rem;
+    font-size: 2.0736rem;
+    color: #000;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+}
+.tw-text-center {
+    text-align: center;
+}
+.input{
+    border-radius: 0 25px 25px 0;
+}
+.inputLabel{
+    border-radius: 25px 0px 0px 25px;
+}
+footer{
+    background-color: #313645;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    padding: 10px 0;
+}
